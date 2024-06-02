@@ -1,24 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=name, initial-scale=1.0">
-    <title>EXPO FSA</title>
-    <link rel="stylesheet" href="INDEX.CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPO</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+        }
+        div{
+            background-color: rgb(20, 91, 184);
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-45%,-45%);
+            padding: 40px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+        }
+        input{
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+        button{
+            background-color: white;
+            border: none; /* Adicionado ponto e vírgula */
+            padding: 6px;
+            border-radius: 10px;
+            width: 100%;
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+    
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a>FSA CENTRO UNIVERSITARIO SANTO ANDRÉ</a>
-            </li>
-            <li>
-                <a>EXPO FSA</a>
-            </li>
-            <li>
-                <a>FAÇA LOGIN</a>
-            </li>
-        </ul>
-    </nav>
+    
+    <img src="EXPO FSA.jpg" class="logo" alt="Logo"> 
+    <div class="login-container">
+        <h1>Faça o login</h1>
+        <input type="text" placeholder="Usuário">
+        <br><br>
+        <input type="password" placeholder="Senha">
+        <br><br>
+        <button>Acessar</button>
+    </div>
 </body>
+
 </html>
