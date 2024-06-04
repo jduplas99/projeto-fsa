@@ -5,7 +5,7 @@ body {
 .login-container {
     background-color: rgb(20, 91, 184);
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-45%,-45%);
     padding: 40px;
@@ -42,20 +42,21 @@ a.forgot-password {
 a.forgot-password:hover {
     text-decoration: underline;
 }
-img{
-    width: 260px;
-}
-.center{
+
+.logo{
     text-align: center;
 }
 .logo img {
-    width: 500px;
+    position: absolute;
+    bottom: 440px; /* Ajuste conforme necessário */
+    left: 510px; /* Ajuste conforme necessário */
+    width: 25%;
 }
 
 .logo2 {
     position: absolute;
     bottom: 170px; /* Ajuste conforme necessário */
-    left: 60px; /* Ajuste conforme necessário */
+    left: 30px; /* Ajuste conforme necessário */
 }
 
 .logo2 img {
@@ -64,11 +65,10 @@ img{
 .logo3 {
     position: absolute;
     bottom: 110px; /* Ajuste conforme necessário */
-    right: 60px; /* Ajuste conforme necessário */
+    right: 75px; /* Ajuste conforme necessário */
 }
 
 .logo3 img {
-    width: 400px;
+    width: 360px;
 }
-
 
