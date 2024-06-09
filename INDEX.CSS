@@ -5,11 +5,11 @@ body {
 .login-container {
     background-color: rgb(20, 91, 184);
     position: absolute;
-    top: 60%;
+    top: 63%;
     left: 50%;
     transform: translate(-45%,-45%);
     padding: 40px;
-    border-radius: 15px;
+    border-radius: 14px;
     color: white;
     text-align: center;
 
@@ -64,11 +64,14 @@ a.forgot-password:hover {
 }
 .logo3 {
     position: absolute;
-    bottom: 110px; /* Ajuste conforme necessário */
+    bottom: 170px; /* Ajuste conforme necessário */
     right: 75px; /* Ajuste conforme necessário */
 }
 
 .logo3 img {
     width: 360px;
 }
-
+a{
+    text-decoration: none;
+    color: blue;
+}
