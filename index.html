@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Decodifidor de texto</title>
+</head>
+<body> 
+    <header>
+        <div class="topo"></div>
+    </header>
+    <main>
+        <div class="texto">
+            <textarea id="texto" placeholder="Digite seu texto"></textarea>
+            <button onclick="criptografar()">Criptografar</button>
+            <button onclick="decodificar()">Decodificar</button>
+        </div>
+        <div class="resultado">
+            <textarea id="resultado" placeholder="Digite o texto para criptografar ou decodificar" disabled></textarea>
+            <button id="copiar" onclick="copiar()">Copiar</button>
+        </div>
+    </main>
+    
+    <footer>
+        <br><br>
+        Desenvolvido por Matheus Malta
+    </footer>
+</body>
+<script>
+    function criptografar() {
+        var texto = document.querySelector('#texto').value;
+
+        texto = texto.replaceAll("e", "enter");
+        texto = texto.replaceAll("i", "imes");
+        texto = texto.replaceAll("a", "ai");
+        texto = texto.replaceAll("o", "ober");
+        texto = texto.replaceAll("u", "ufat");
+
+        document.querySelector('#texto').value = "";
+        document.querySelector('#resultado').value = texto
+    }
+
+    function decodificar() {
+        var texto = document.querySelector('#texto').value;
+
+        texto = texto.replaceAll("enter", "e");
+        texto = texto.replaceAll("imes", "i");
+        texto = texto.replaceAll("ai", "a");
+        texto = texto.replaceAll("ober", "o");
+        texto = texto.replaceAll("ufat", "u");
+
+        document.querySelector('#texto').value = "";
+        document.querySelector('#resultado').value = texto
+    }
+
+    async function copiar() {
+        let text = document.querySelector('#resultado').value;
+        await navigator.clipboard.writeText(text);
+        document.querySelector('#resultado').value = "";
+    }
+</script>
+        
+</html>
