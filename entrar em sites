@@ -1,0 +1,20 @@
+import webbrowser
+
+def abrir_site(https://www.youtube.com/watch?v=5_JQVZgdLB4):
+    try:
+     
+        webbrowser.open(url, new=2)  # new=2 abre em uma nova aba, se possível
+        print(f"Site '{url}' aberto com sucesso!")
+    except Exception as e:
+        print(f"Erro ao tentar abrir o site: {e}")
+
+
+sites = [
+    "https://www.google.com",
+    "https://www.youtube.com",
+    "https://www.github.com"
+]
+
+
+for site in sites:
+    abrir_site(site)
